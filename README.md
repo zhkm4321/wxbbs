@@ -1,0 +1,2 @@
+# wxbbs
+a weixin application
