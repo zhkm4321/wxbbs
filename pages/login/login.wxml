@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="useroprate">
+    <button class="btn_imtechnic" bindtap="imtechnic">我是技师</button>
+    <button class="btn_imcarowner" bindtap="imcarowner">我是车主</button>
+  </view>
+  <view class="app-corporate">
+	<text>{{corpName}}</text>
+  </view>
+</view>

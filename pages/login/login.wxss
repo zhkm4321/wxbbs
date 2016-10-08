@@ -1,0 +1,55 @@
+/**login.wxss**/
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height:600rpx;
+}
+
+.userinfo-avatar {
+	width: 256rpx;
+	height: 256rpx;
+	margin: 100rpx 0rpx 20rpx 0px;
+	border-radius: 50%;
+}
+
+.userinfo-nickname {
+	color: #555555;
+	font:18px/40px 'microsoft yahei';
+}
+
+.useroprate {
+	width: 600rpx;
+	margin: 0 auto;
+}
+
+.useroprate .btn_imtechnic,.useroprate .btn_imcarowner{
+	width:240rpx;
+	height:100rpx;
+	font-size:1rem;
+	font-family:'microsoft yahei';
+	line-height:2.5rem;
+	color:#fff;
+	border-radius:0rpx;
+	border:none;
+	display:inline-block;
+	margin:0rpx 30rpx;
+}
+
+.useroprate .btn_imtechnic{
+	background:#2591e4;
+}
+
+.useroprate .btn_imcarowner{
+	background:#fc6b1c;
+}
+
+.app-corporate{
+	width:100%;
+	position:absolute;
+	bottom:0px;
+	text-align:center;
+	font-size:0.5rem;
+	font-family:'microsoft yahei';
+	line-height:2.5rem;
+}
