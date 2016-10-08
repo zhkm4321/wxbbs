@@ -1,2 +1,2 @@
-# wxbbs
+# wxforum
 a weixin application
