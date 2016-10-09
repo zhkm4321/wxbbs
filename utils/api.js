@@ -1,5 +1,5 @@
 'use strict';
-var HOST_URI = 'https://www.v2ex.com/api/';
+var HOST_URI = 'http://localhost:8080/wxserver/api/';
 
 // 获取节点
 // 所有的节点
@@ -21,7 +21,9 @@ var GET_REPLIES = 'replies/show.json';
 
 
 // 获取用户信息
-var GET_USERINFO = 'members/show.json';
+var GET_USERINFO = 'members/validate.json';
+// 获取技师认证信息
+var GET_TECHNICIANINFO = 'members/getTechnicianInfo.json';
 
 function _obj2uri(obj){
 	return Object.keys(obj).map(function(k) {
@@ -54,9 +56,19 @@ function _getReplies(o){
 	return HOST_URI+GET_REPLIES+'?'+_obj2uri(o);
 }
 
+function _getUserInfo(o){
+	return HOST_URI+GET_USERINFO+'?'+_obj2uri(o);
+}
+
+function _getTechnicianInfo(o){
+	return HOST_URI+GET_TECHNICIANINFO+'?'+_obj2uri(o);
+}
+
 module.exports = {
 	getAllNode: _getAllNode,
 	getNodeInfo: _getNodeInfo,
+	getUserInfo: _getUserInfo,
+	getTechnicianInfo: _getTechnicianInfo,
 	getLatestTopic: _getLatestTopic,
 	getHotestTopic: _getHotestTopic,
 	getTopicInfo: _getTopicInfo,

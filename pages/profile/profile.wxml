@@ -1,0 +1,7 @@
+<!--profile.wxml-->
+<view class="container">
+    {{userInfo.status}}
+    <view wx:if="{{userInfo.status==0}}"> 000000000 </view>
+    <view wx:elif="{{userInfo.status==1}}"> 111111111 </view>
+    <view wx:else> 222222222222 </view>
+</view>

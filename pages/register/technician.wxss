@@ -1,0 +1,17 @@
+/**techinician.wxss**/
+.flex-row{
+    display:flex;
+    flex-direction:column;
+}
+.flex-view-item{
+    margin: 20rpx;
+    border-bottom: 1rpx solid #d3d3d3;
+}
+.flex-view-item .upload_img,.flex-view-item .upload_info{
+    justify-content:flex-start;
+    align-items:center;
+}
+.pic_sfz{
+    width:300rpx;
+    height:190rpx;
+}

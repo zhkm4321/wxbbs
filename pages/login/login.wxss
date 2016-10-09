@@ -1,4 +1,8 @@
 /**login.wxss**/
+.login_con{
+	background: url(../../images/login_bg.jpg) repeat;
+}
+
 .userinfo {
 	display: flex;
 	flex-direction: column;
@@ -14,12 +18,21 @@
 }
 
 .userinfo-nickname {
-	color: #555555;
-	font:18px/40px 'microsoft yahei';
+	color: #fff;
+	font-size:1rem;
+	font-family:'microsoft yahei';
+	line-height:2.5rem;
+}
+.btn_area{
+	width: 100%;
+	height: 100rpx;
+	position: absolute;
+	bottom:200rpx;
 }
 
 .useroprate {
 	width: 600rpx;
+	height: 100rpx;
 	margin: 0 auto;
 }
 
@@ -27,21 +40,21 @@
 	width:240rpx;
 	height:100rpx;
 	font-size:1rem;
+	font-weight: bold;
 	font-family:'microsoft yahei';
 	line-height:2.5rem;
 	color:#fff;
-	border-radius:0rpx;
-	border:none;
+	border:2px solid #fff;
 	display:inline-block;
 	margin:0rpx 30rpx;
 }
 
 .useroprate .btn_imtechnic{
-	background:#2591e4;
+	background:#1fb1c2;
 }
 
 .useroprate .btn_imcarowner{
-	background:#fc6b1c;
+	background:#f15834;
 }
 
 .app-corporate{
@@ -52,4 +65,5 @@
 	font-size:0.5rem;
 	font-family:'microsoft yahei';
 	line-height:2.5rem;
+	color:#fff;
 }
